@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="textile-hero">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <h1>Premium Fabric Manufacturing & Global Exports</h1>
+            <p>High-quality textiles crafted with precision, exported worldwide.</p>
+            <a href="#inquiry" class="textile-btn">Request Catalogue</a>
+        </div>
+        <div class="hero-image"></div>
+    </div>
+</section>
+
+
+<section class="textile-products">
+    <div class="container">
+        <h2>Our Fabric Range</h2>
+
+        <div class="fabric-grid">
+            <div class="fabric-card">
+                <div class="fabric-img"></div>
+                <h4>Premium Cotton</h4>
+            </div>
+
+            <div class="fabric-card">
+                <div class="fabric-img"></div>
+                <h4>Polyester Blends</h4>
+            </div>
+
+            <div class="fabric-card">
+                <div class="fabric-img"></div>
+                <h4>Export Linen</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="textile-export">
+    <div class="container export-grid">
+        <div>
+            <h2>Trusted by 50+ Countries</h2>
+            <p>We maintain international quality standards and consistent production capacity.</p>
+        </div>
+
+        <div class="export-stats">
+            <div><h3>15+</h3><span>Years Experience</span></div>
+            <div><h3>200K+</h3><span>Meters / Month</span></div>
+            <div><h3>ISO</h3><span>Certified</span></div>
+        </div>
+    </div>
+</section>
+
+
+<section id="inquiry" class="textile-inquiry">
+    <div class="container">
+        <h2>Send Your Fabric Requirements</h2>
+
+        <form class="textile-form">
+            <input type="text" placeholder="Company Name">
+            <input type="email" placeholder="Email Address">
+            <textarea placeholder="Fabric Specifications"></textarea>
+            <button type="submit" class="textile-btn">Submit Inquiry</button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

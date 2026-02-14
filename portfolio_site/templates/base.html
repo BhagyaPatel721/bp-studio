@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>{% block title %}My Portfolio{% endblock %}</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">BP Studio</div>
+
+        <!-- Desktop Links -->
+        <div class="nav-links desktop-nav">
+            <a href="{% url 'home' %}" class="nav-link">Home</a>
+            <a href="{% url 'home' %}#projects">Projects</a>
+            <a href="{% url 'about' %}" class="nav-link">About</a>
+            <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+        </div>
+
+        
+</nav>
+
+
+    
+
+    <!-- PAGE CONTENT -->
+    <main>
+         <div class="bg-orbs">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+</div>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 BP Studio</p>
+    </footer>
+
+    <!-- WHATSAPP FLOAT BUTTON -->
+    <a href="https://wa.me/91XXXXXXXXXX" 
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener">
+        💬
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+        
+    
+    <script src="{% static 'js/main.js' %}"></script>
+    {% block page_js %}{% endblock %}
+</body>
+</html>

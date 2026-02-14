@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="tw-hero page-enter">
+    <div class="tw-hero-inner">
+        <h1>TaleWeaver</h1>
+        <p>AI-Powered Storytelling Platform</p>
+
+        <div class="tw-tags">
+            <span>Django</span>
+            <span>LLM (LLaMA-3)</span>
+            <span>RAG</span>
+            <span>FAISS</span>
+        </div>
+    </div>
+</section>
+
+<section class="tw-section reveal">
+    <h2>Project Overview</h2>
+    <p>
+        TaleWeaver is a full-stack AI storytelling platform that generates
+        high-quality stories using retrieval-augmented generation and
+        large language models, wrapped in a modern, ChatGPT-style interface.
+    </p>
+</section>
+
+<section class="tw-section tw-alt reveal">
+    <h2>The Problem</h2>
+    <ul>
+        <li>AI stories felt generic and repetitive</li>
+        <li>No contextual memory across prompts</li>
+        <li>Poor UI/UX in existing storytelling platforms</li>
+    </ul>
+</section>
+
+<section class="tw-section reveal">
+    <h2>Design & Development Approach</h2>
+    <p>
+        I designed TaleWeaver with a focus on clean UI, smooth interactions,
+        and scalable backend architecture. The system combines curated datasets,
+        vector embeddings, and LLaMA-3 to deliver context-aware storytelling.
+    </p>
+</section>
+
+<section class="tw-section tw-alt reveal">
+    <h2>Technology Stack</h2>
+
+    <div class="tw-grid">
+        <div class="reveal delay-1">Django</div>
+        <div class="reveal delay-2">Python</div>
+        <div class="reveal delay-3">Groq API</div>
+        <div class="reveal delay-4">LLaMA-3 70B</div>
+        <div class="reveal delay-5">FAISS</div>
+        <div class="reveal delay-6">HTML · CSS · JavaScript</div>
+    </div>
+</section>
+
+<section class="tw-section reveal">
+    <h2>Key Features</h2>
+
+    <div class="tw-grid">
+        <div class="reveal delay-1">Chat-Based Story Generation</div>
+        <div class="reveal delay-2">Genre-Specific Prompting</div>
+        <div class="reveal delay-3">Story Regeneration</div>
+        <div class="reveal delay-4">PDF & Word Downloads</div>
+        <div class="reveal delay-5">User Authentication</div>
+        <div class="reveal delay-6">Persistent Chat History</div>
+    </div>
+</section>
+
+<section class="tw-section tw-alt reveal">
+    <h2>Outcome & Impact</h2>
+    <p>
+        TaleWeaver stands as a production-ready AI application demonstrating
+        advanced backend engineering, modern UI/UX design, and scalable
+        AI integration — built as a <strong>500-mark final year project</strong>.
+    </p>
+</section>
+
+<script src="{% static 'js/case_study.js' %}"></script>
+
+{% endblock %}

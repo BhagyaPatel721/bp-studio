@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="about-hero page-enter">
+    <div class="about-hero-inner">
+        <h1>About Me</h1>
+        <p>
+            I design and build modern, high-performance websites that
+            look great and work flawlessly.
+        </p>
+    </div>
+</section>
+
+<section class="about-section reveal">
+    <h2>Who I Am</h2>
+    <p>
+        I’m Bhagya Patel — a website designer and developer focused on creating
+        clean, user-friendly, and scalable web experiences.
+        I work with businesses, startups, and personal brands to turn ideas
+        into functional and visually compelling websites.
+    </p>
+</section>
+
+<section class="about-section about-alt reveal">
+    <h2>What I Do</h2>
+
+    <div class="about-grid">
+        <div class="about-card reveal delay-1">
+            <h3>Website Design</h3>
+            <p>
+                Modern UI/UX design with attention to layout, spacing,
+                color, and user experience.
+            </p>
+        </div>
+
+        <div class="about-card reveal delay-2">
+            <h3>Website Development</h3>
+            <p>
+                Fully functional websites using Django, HTML, CSS,
+                and JavaScript.
+            </p>
+        </div>
+
+        <div class="about-card reveal delay-3">
+            <h3>Case Study Projects</h3>
+            <p>
+                Real-world projects with clear goals, design approach,
+                and measurable outcomes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="about-section reveal">
+    <h2>How I Work</h2>
+    <ul class="about-list">
+        <li>Understand client goals & audience</li>
+        <li>Design clean and intuitive layouts</li>
+        <li>Develop responsive and scalable code</li>
+        <li>Test, refine, and optimize performance</li>
+    </ul>
+</section>
+
+<section class="about-section about-alt reveal">
+    <h2>Why Work With Me</h2>
+    <p>
+        I don’t just build websites — I build digital experiences.
+        My focus is on clarity, usability, and long-term value,
+        ensuring every project feels professional and purposeful.
+    </p>
+</section>
+
+<script src="{% static 'js/about.js' %}"></script>
+
+{% endblock %}

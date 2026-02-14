@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Website Designer Portfolio{% endblock %}
+
+{% block content %}
+
+<section class="hero page-enter" id="home">
+    <div class="hero-content">
+        <h1>
+            I Design <span>High-Impact</span>
+            Websites That Convert
+        </h1>
+
+        <p>
+            I help businesses, startups, and individuals build modern,
+            fast, and visually stunning websites.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Work</a>
+            <a href="https://wa.me/9023247705" class="btn secondary">WhatsApp Me</a>
+        </div>
+    </div>
+</section>
+
+<section class="projects reveal delay-1" id="projects">
+    <h2>Selected Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>TaleWeaver</h3>
+            <p>AI-powered interactive storytelling platform.</p>
+
+            <div class="project-meta">
+        <span>UI/UX</span>
+        <span>Django</span>
+        <span>AI</span>
+            </div>
+
+            <a href="{% url 'case_study' 'taleweaver' %}" class="case-btn">
+                View Case Study →
+            </a>
+        </div>
+
+        <div class="project-card">
+    <h3>Export Business Website</h3>
+    <p>
+        B2B export-focused website designed for international credibility,
+        product clarity, and lead generation.
+    </p>
+
+    <div class="project-meta">
+        <span>B2B</span>
+        <span>UI/UX</span>
+        <span>SEO</span>
+        <span>Django</span>
+    </div>
+
+    <a href="{% url 'case_study' 'export_case' %}" class="case-btn">
+        View Case Study →
+    </a>
+        </div>
+</div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="concepts-section">
+    <div class="container">
+
+        <h2 class="section-title">Website Concepts</h2>
+
+        <div class="concepts-grid">
+
+            <!-- Textile -->
+            <a href="{% url 'textile_concept' %}" class="concept-card">
+                <h3>Textile Business</h3>
+
+                <div class="template-preview">
+                    <div class="preview-hero"></div>
+
+                    <div class="preview-products">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="preview-inquiry"></div>
+                </div>
+            </a>
+
+            <!-- Modern (Center) -->
+            <a href="{% url 'modern_concept' %}" class="concept-card modern-card">
+                <h3>Modern Brand</h3>
+
+                <div class="template-preview">
+                    <div class="preview-hero"></div>
+
+                    <div class="preview-split">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Export -->
+            <a href="{% url 'export_concept' %}" class="concept-card">
+                <h3>Export / Manufacturing</h3>
+
+                <div class="template-preview">
+                    <div class="preview-hero"></div>
+
+                    <div class="preview-certifications">
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <div class="preview-global"></div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+{% block page_js %}
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}
+
+{% endblock %}

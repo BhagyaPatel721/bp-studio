@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="modern-hero">
+    <div class="container">
+        <h1>
+            We Build <br>
+            Modern Brands.
+        </h1>
+        <p>Bold design. Strategic thinking. Clean execution.</p>
+        <a href="#contact" class="modern-btn">Start a Project</a>
+    </div>
+</section>
+
+
+<section class="modern-showcase">
+    <div class="container modern-grid">
+
+        <div class="modern-image-large">
+            <img src="{% static 'images/modern1.jpg' %}" alt="Brand Image">
+        </div>
+
+        <div class="modern-text">
+            <h2>Creative Direction</h2>
+            <p>
+                We design identity systems that feel timeless,
+                expressive and aligned with your brand voice.
+            </p>
+        </div>
+
+        <div class="modern-text">
+            <h2>Digital Presence</h2>
+            <p>
+                Websites and digital platforms crafted with
+                clarity, interaction and performance in mind.
+            </p>
+        </div>
+
+        <div class="modern-image-small">
+            <img src="{% static 'images/modern2.jpg' %}" alt="Brand Work">
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact" class="modern-contact">
+    <div class="container">
+        <h2>Let’s Create Something Bold.</h2>
+
+        <form class="modern-form">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Tell us about your brand"></textarea>
+            <button type="submit" class="modern-btn">Send Inquiry</button>
+        </form>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<section class="export-hero-new">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <span class="section-label">Global Manufacturing</span>
+            <h1>Industrial Production & Export Solutions</h1>
+            <p>
+                Precision manufacturing with global logistics
+                and international compliance standards.
+            </p>
+            <a href="#contact" class="export-btn">Request Company Profile</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="{% static 'images/factory.jpg' %}" alt="Factory">
+        </div>
+    </div>
+</section>
+
+
+<section class="export-capabilities-new">
+    <div class="container capability-grid-new">
+
+        <div class="cap-img">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758" alt="Manufacturing">
+        </div>
+
+        <div class="cap-content">
+            <h2>Our Capabilities</h2>
+            <ul>
+                <li>Mass Production Facilities</li>
+                <li>Automated Quality Control</li>
+                <li>International Compliance</li>
+                <li>Global Export Documentation</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contact" class="export-contact">
+    <div class="container contact-grid">
+
+        <div class="contact-left">
+            <h2>Start a Manufacturing Partnership</h2>
+            <p>Send your production requirements and our team will connect with you.</p>
+        </div>
+
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Company Name">
+                <input type="email" placeholder="Email Address">
+                <textarea placeholder="Production Requirements"></textarea>
+                <button type="submit" class="export-btn">Submit Inquiry</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

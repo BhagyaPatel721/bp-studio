@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+{% if messages %}
+    <div class="alert-success">
+        {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+    </div>
+{% endif %}
+
+<section class="contact-hero">
+    <div class="contact-hero-inner">
+        <h1>Let’s Work Together</h1>
+        <p>
+            Have a project in mind or need a professional website?
+            Fill out the form below and I’ll get back to you.
+        </p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-grid">
+
+        <!-- FORM -->
+        <form class="contact-form reveal delay-1" method="post">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">
+                Send Message
+            </button>
+        </form>
+
+        <!-- INFO -->
+        <div class="contact-info reveal delay-2">
+            <h2>Contact Details</h2>
+            <p>
+                I usually respond within 24 hours.
+                You can also reach me directly via WhatsApp.
+            </p>
+
+            <div class="contact-method">
+                <span>Email Me</span>
+                <p>
+<a href="mailto:bhagyapatel7065@gmail.com?subject=Website%20Inquiry&body=Hi%20Bhagya," rel="noopener">bhagyapatel7065</a>
+                </p>
+            </div>
+
+            <div class="contact-method">
+                <span>WhatsApp</span>
+                <p>
+        <a href="tel:+919023247705" rel="noopener">+91 90232 47705
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="{% static 'js/contact.js' %}"></script>
+
+{% endblock %}
